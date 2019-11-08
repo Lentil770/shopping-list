@@ -1,11 +1,11 @@
 $(function() {
-    $("button[type='submit']").on('submit', function(event) {
+    $('.js-submit').on('submit', function(event) {
       event.preventDefault();
       $('#shopping-list-entry').val('');
       const newItem = $('#shopping-list-entry').val();
 
-      $('.shopping-list').append( `     <li>
-        <span class="shopping-item">${'newItem'}</span>
+      $('.shopping-list').append(      `<li>
+        <span class="shopping-item">${newItem}</span>
         <div class="shopping-item-controls">
           <button class="shopping-item-toggle">
             <span class="button-label">check</span>
@@ -14,7 +14,7 @@ $(function() {
             <span class="button-label">delete</span>
           </button>
         </div>
-      </li>`
+      </li>`);
       );
     });
 
