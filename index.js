@@ -1,5 +1,5 @@
 $(function() {
-    $('.js-submit').on('submit', function(event) {
+    $('.js-submit').on('submit', function() {
       event.preventDefault();
       $('#shopping-list-entry').val('');
       const newItem = $('#shopping-list-entry').val()
