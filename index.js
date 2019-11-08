@@ -42,7 +42,7 @@ $(function() {
             <span class="button-label">delete</span>
           </button>
         </div>
-      </li>`
+      </li>`);
     $('.js-submit').on('submit', function(event) {
       event.preventDefault();
       $('#shopping-list-entry').val('');
