@@ -20,7 +20,7 @@ $(function() {
     });
 
   $('.shopping-item-toggle').click(function() {
-    $(this).closest('li').find('shopping-item').toggleClass(shopping-item__checked);
+    $(this).closest('li').find('shopping-item').toggleClass('shopping-item__checked');
   })
   $('.shopping-item-delete').click(function() {
     $(this).closest('li').remove();
