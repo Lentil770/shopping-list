@@ -3,8 +3,8 @@ $(function() {
       event.preventDefault();
       $('#shopping-list-entry').val('');
       const newItem = $('#shopping-list-entry').val();
-
-      $('.shopping-list').append(      `<li>
+      const oldList = $('.shopping-list').val();
+      $('.shopping-list').html(      `<li>
         <span class="shopping-item">${newItem}</span>
         <div class="shopping-item-controls">
           <button class="shopping-item-toggle">
@@ -15,7 +15,6 @@ $(function() {
           </button>
         </div>
       </li>`);
-      );
     });
 
   $('.shopping-item-toggle').click(function(event) {
