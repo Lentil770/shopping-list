@@ -1,12 +1,11 @@
 $(function() {
-    $("button[type='submit']").submit( function(event) {
+    $("button[type='submit']").on('submit', function(event) {
       event.preventDefault();
-
-      const newItem = $('.shopping-list-entry').val();
       $('shopping-list-entry').val('');
+      const newItem = $('.shopping-list-entry').val();
 
-      $('.shopping-list').prepend( `     <li>
-        <span class="shopping-item">${newItem}</span>
+      $('.shopping-list').append( `     <li>
+        <span class="shopping-item">${'newItem'}</span>
         <div class="shopping-item-controls">
           <button class="shopping-item-toggle">
             <span class="button-label">check</span>
